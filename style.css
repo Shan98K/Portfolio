@@ -1,3 +1,82 @@
-.page{
-    height: 2000px;
-}
+body {
+      background: #111;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .scene {
+      position: relative;
+      width: 300px;
+      height: 200px;
+    }
+
+    /* Monitor */
+    .monitor {
+      width: 300px;
+      height: 200px;
+      background: #222;
+      border: 6px solid #444;
+      border-radius: 8px;
+      position: relative;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+      z-index: 2;
+      overflow: hidden;
+    }
+
+    /* Screen Document */
+    .screen {
+      color: #0f0;
+      font-family: monospace;
+      font-size: 18px;
+      padding: 20px;
+      height: 100%;
+      box-sizing: border-box;
+      white-space: nowrap;
+      overflow: hidden;
+      border-radius: 4px;
+      animation: typing 4s steps(30) infinite alternate, blink 0.7s step-end infinite;
+    }
+
+    @keyframes typing {
+      0% { width: 0ch; }
+      50% { width: 28ch; }
+      100% { width: 0ch; }
+    }
+
+    @keyframes blink {
+      50% { border-right: 2px solid #0f0; }
+      100% { border-right: none; }
+    }
+
+    /* Revolving Nut (Behind Monitor) */
+    .nut {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100px;
+      height: 100px;
+      background: repeating-conic-gradient(#888 0deg 15deg, #333 15deg 30deg);
+      border-radius: 50%;
+      z-index: 0;
+      animation: spin 4s linear infinite;
+    }
+
+    .nut::before {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: 25%;
+      width: 50%;
+      height: 50%;
+      background: #111;
+      border-radius: 50%;
+    }
+
+    @keyframes spin {
+      0% { transform: translate(-50%, -50%) rotate(0deg); }
+      100% { transform: translate(-50%, -50%) rotate(360deg); }
+    }

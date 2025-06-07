@@ -1,10 +1,10 @@
 window.addEventListener("DOMContentLoaded", () => {
-    const intro = document.querySelector(".intro");
+    const intro = document.querySelector(".bop");
 
     // Listen for the zoomOut animation to finish
     intro.addEventListener("animationend", (e) => {
         if (e.animationName === "zoomOut") {
-            window.location.href = "nextpage.html"; // 👈 change this to your page
+            window.location.href = "nextpage.html";
         }
     });
 });

@@ -66,7 +66,7 @@
 .bop {
     animation: colorChange 3s infinite ease-in-out, zoomOut 1s ease forwards;
     transform-origin: center center;
-    animation-delay: 0s, 5s;
+    animation-delay: 0s, 10s;
 }
 .logo{
     display: flex;

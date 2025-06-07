@@ -1,0 +1,168 @@
+@import url();
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+@keyframes lines {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes motion {
+  0% {
+    transform: translateX(0vw);
+  }
+  20% {
+    transform: translateX(20vw);
+  }
+  40% {
+    transform: translateX(5vw);
+  }
+  60% {
+    transform: translateX(20vw);
+  }
+  80% {
+    transform: translateX(35vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+.body{
+  background-color: purple;
+}
+.bg{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  position: fixed;
+  z-index: -10;
+  filter: blur(75px);
+}
+.balls{
+  position: absolute;
+  height: 20vh;
+  width: 20vh;
+  border-radius: 80px;
+}
+#ball1{
+  animation: motion 8s ease infinite;
+  background-color: red;
+  top: 70%;
+  left: 20%;
+}
+#ball2{
+  animation: motion 6s ease infinite;
+  background-color: blue;
+  top: 10%;
+  left: 10%;
+}
+#ball3{
+  animation: motion 4s ease infinite;
+  background-color: violet;
+  top: 60%;
+  left: 50%;
+}
+#ball4{
+  animation: motion 7s ease infinite;
+  background-color: darkmagenta;
+  top: 15%;
+  left: 60%;
+}
+#ball5{
+  animation: motion 10s ease infinite;
+  background-color: orange;
+  top: 35%;
+  left: 40%;
+}
+.element{
+  position: relative;
+  margin-top: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.monitor {
+  position: absolute;
+  width: 30vh;
+  height: 20vh;
+  background: #222;
+  border: 1.5vh solid #444;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+  z-index: 2;
+  overflow: hidden;
+}
+.lines{
+  height: 0.5vh;
+  transform-origin: left;
+  border-radius: 50px;
+  margin-bottom: 10px;
+  background-color: green;
+}
+#l1{
+  width: 70%;
+}
+#l2{
+  width: 60%;
+}
+#l3{
+  width: 80%;
+}
+#l4{
+  width: 50%;
+}
+#l5{
+  width: 75%;
+}
+.lines{
+  animation: lines 1s infinite ease-in-out;
+}
+.window{
+  margin-top: 2vh;
+  margin-left: 0vh;
+  height: 10vh;
+  width: 80%;
+  background-color: aquamarine;
+  border: 0.4vh solid grey;
+}
+.gear{
+  animation: rotate infinite linear;
+  background-image: url(images/gear.png);
+  background-size: cover;
+}
+#gear1{
+  animation-duration: 3s;
+  position: absolute;
+  margin-top: 25vh;
+  margin-right: 35vh;
+  width: 30vh;
+  height: 30vh;
+}
+#gear2{
+  animation-duration: 3s;
+  position: absolute;
+  margin-top: -25vh;
+  margin-left: 35vh;
+  width: 20vh;
+  height: 20vh;
+}
+
+
+

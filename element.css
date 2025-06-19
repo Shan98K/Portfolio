@@ -22,6 +22,14 @@
     transform: rotate(360deg);
   }
 }
+@keyframes rotate-reverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 @keyframes motion {
   0% {
     transform: translateX(0vw);
@@ -245,7 +253,7 @@
 .element{
   scale: 1.75;
   top: 100px;
-  transform: translateX(-30%);
+  transform: translateX(-10000%);
   position: relative;
   margin-left: auto;
   width: 300px;
@@ -343,7 +351,6 @@
 }
 .gear{
   background-size: cover;
-  animation: rotate infinite linear;
   background-image: url(images/gear.png);
 }
 #gear1{
@@ -352,15 +359,26 @@
   margin-top: -135px;
   margin-left: 185px;
   position: absolute;
-  animation-duration: 2s;
+  animation: rotate 2s infinite linear;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 }
 #gear2{
+  width: 70px;
+  height: 70px;
+  margin-top: 190px;
+  position: absolute;
+  margin-right: -220px;
+  animation: rotate-reverse 6s linear infinite;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
+}
+#gear3{
   width: 150px;
   height: 150px;
   margin-top: 130px;
   position: absolute;
   margin-right: 175px;
-  animation-duration: 5s;
+  animation: rotate 4s linear infinite;
+  filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.5));
 }
 .cloudbox{
   top: 60px;

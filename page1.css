@@ -174,8 +174,8 @@ html{
     filter: blur(10px);
     position: absolute;
     border-radius: 20px;
-    background: linear-gradient(to right, darkblue, purple);
     animation: rotate 1s linear infinite;
+    background: linear-gradient(to right, darkblue, purple);
 }
 .hashes{
     position: relative;
@@ -218,23 +218,96 @@ html{
     width: max-content;
     max-width: 80%;
 }
-@media (max-width: 1300px) {
+@media (max-width: 1537px) {
     .navbar{
         padding-top: 1.25rem;
         padding-bottom: 1rem;
         width: 100vw;
     }
     .page1text{
-    width: max-content;
-    max-width: 60%;
+        width: max-content;
+        max-width: 60%;
     }
     .element{
         scale: 2.2;
+        top: 215px;
+        margin-right: 27.5%;
+        transform: translateX(20%);
+    }
+}
+@media (max-width: 1280px) {
+    .navbar{
+        height: 25px;
+        padding-top: 1.25rem;
+        padding-bottom: 1rem;
+        width: 100vw;
+    }
+    .page1text{
+        scale: 1.15;
+        width: max-content;
+        max-width: 60%;
+        margin-top: -25px;
+        margin-left: 100px;
+    }
+    .element{
+        scale: 1.55;
+        top: 115px;
         margin-right: 25%;
-        transform: translateY(150px);
+        transform: translateX(15%);
+    }
+}
+@media (max-width: 1024px) {
+    .navbar{
+        padding-top: 1.25rem;
+        padding-bottom: 1rem;
+        width: 100vw;
+        height: 25px;
+    }
+    .page1text{
+        margin-top: -70px;
+        scale: 0.85;
+        width: max-content;
+        max-width: 60%;
+        left: -12.5%;
+    }
+    .element{
+        z-index: 99999;
+        scale: 1.75;
+        top: 115px;
+        margin-right: 25%;
+        transform: translateX(15%);
     }
 }
 @media (max-width: 768px) {
+    .navbar{
+        height: 35px;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        width: 100vw;
+    }
+    .navheadshadow , .navhead{
+        margin-left: 0.1rem;
+        scale: 0.6;
+    }
+    .nav{
+        scale: 0.75;
+        transform: translateX(10%);
+    }
+    .page1text{
+        padding: 0px;
+        scale: 0.8;
+        left: -15%;
+        width: max-content;
+        max-width: 100%;
+    }
+    .element{
+        scale: 1;
+        margin-right: 25%;
+        top: 25px;
+        transform: translateX(20%);
+    }
+}
+@media (max-width: 475px) {
     .navbar{
         height: 45px;
         padding-top: 0rem;
@@ -246,16 +319,44 @@ html{
         scale: 0.6;
     }
     .page1text{
-    scale: 0.8;
-    top: -100px;
-    left: -25%;
-    width: max-content;
-    max-width: 100%;
+        padding: 0px;
+        scale: 0.8;
+        left: -25%;
+        width: max-content;
+        max-width: 100%;
     }
     .element{
         scale: 1;
         margin-right: 25%;
-        top: -115px;
+        transform: translateX(15%);
+    }
+}
+@media (max-width: 314px) {
+    .navbar{
+        height: 30px;
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        width: 100vw;
+    }
+    .navheadshadow , .navhead{
+        margin-left: 0.1rem;
+        scale: 0.45;
+    }
+    .nav{
+        scale: 0.6;
+    }
+    .page1text{
+        padding: 0px;
+        scale: 0.8;
+        top: -25px;
+        left: -35%;
+        width: max-content;
+        max-width: 100%;
+    }
+    .element{
+        scale: 0.7;
+        margin-top: -75px;
+        margin-right: 25%;
         transform: translateX(15%);
     }
 }

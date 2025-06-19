@@ -1,5 +1,8 @@
 *{
+    padding: 0px;
     margin: 0px;
+    list-style: none;
+    text-decoration: none;
 }
 html{
     scroll-behavior: smooth; /* Enables smooth scroll globally */
@@ -227,10 +230,11 @@ html{
     .page1text{
         width: max-content;
         max-width: 60%;
+        left: -75px;
     }
     .element{
-        scale: 2.2;
-        top: 215px;
+        scale: 2;
+        top: 150px;
         margin-right: 27.5%;
         transform: translateX(20%);
     }
@@ -246,13 +250,13 @@ html{
         scale: 1.15;
         width: max-content;
         max-width: 60%;
-        margin-top: -25px;
-        margin-left: 100px;
+        margin-top: -40px;
+        left: -7.5%;
     }
     .element{
         scale: 1.55;
-        top: 115px;
-        margin-right: 25%;
+        top: 100px;
+        margin-right: 20%;
         transform: translateX(15%);
     }
 }
@@ -264,16 +268,15 @@ html{
         height: 25px;
     }
     .page1text{
-        margin-top: -70px;
+        margin-top: -80px;
         scale: 0.85;
         width: max-content;
         max-width: 60%;
-        left: -12.5%;
+        left: -150px;
     }
     .element{
-        z-index: 99999;
-        scale: 1.75;
-        top: 115px;
+        scale: 1.35;
+        top: 25px;
         margin-right: 25%;
         transform: translateX(15%);
     }
@@ -296,14 +299,15 @@ html{
     .page1text{
         padding: 0px;
         scale: 0.8;
-        left: -15%;
+        top: -25px;
+        left: -115px;
         width: max-content;
         max-width: 100%;
     }
     .element{
         scale: 1;
-        margin-right: 25%;
-        top: 25px;
+        top: -20px;
+        margin-right: 20%;
         transform: translateX(20%);
     }
 }
@@ -319,6 +323,7 @@ html{
         scale: 0.6;
     }
     .page1text{
+        top: -15px;
         padding: 0px;
         scale: 0.8;
         left: -25%;
@@ -326,8 +331,10 @@ html{
         max-width: 100%;
     }
     .element{
-        scale: 1;
-        margin-right: 25%;
+        top: 10px;
+        scale: 0.8;
+        right: 15px;
+        margin-right: 20%;
         transform: translateX(15%);
     }
 }
@@ -348,7 +355,7 @@ html{
     .page1text{
         padding: 0px;
         scale: 0.8;
-        top: -25px;
+        top: -50px;
         left: -35%;
         width: max-content;
         max-width: 100%;

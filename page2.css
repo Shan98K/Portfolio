@@ -1,0 +1,150 @@
+.page2{
+    padding-inline: 20px;
+    margin-top: 50px;
+    max-width: 85%;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.p2textmain{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow:
+        0px 0px 5px rgba(0, 0, 0, 1),
+        1px 1px 10px rgba(0, 0, 0, 1),
+        1px 1px 20px rgba(0, 0, 0, 1);
+}
+.p2textsub{
+    font-size: 0.9rem;
+    gap: 20px;
+    display: flex;
+    background-color: rgba(255, 0, 0, 0.2);
+}
+.p2subtext{
+    color: white;
+    text-shadow:
+        0px 0px 5px rgba(0, 0, 0, 1),
+        1px 1px 10px rgba(0, 0, 0, 1),
+        1px 1px 20px rgba(0, 0, 0, 1);
+}
+.p2aboutbox{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p2aboutinfo{
+    /* nothing yet */
+    background-color: rgba(0, 0, 0, 0.2);
+}
+.p2hello{
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow:
+        0px 0px 5px rgba(0, 0, 0, 1),
+        1px 1px 10px rgba(0, 0, 0, 1),
+        1px 1px 20px rgba(0, 0, 0, 1);
+}
+.p2namebox{
+    position: relative;
+}
+.p2nameshadow {
+    position: absolute;
+    font-size: 2rem;
+    max-width: 250px;
+    font-weight: 600;
+    width: max-content;
+    color: black;
+    text-shadow:
+        0px 0px 5px rgba(0, 0, 0, 1),
+        1px 1px 10px rgba(0, 0, 0, 1),
+        1px 1px 20px rgba(0, 0, 0, 1);
+}
+.p2name {
+    position: relative;
+    font-size: 2rem;
+    max-width: 250px;
+    font-weight: 600;
+    width: max-content;
+    color: transparent;
+    background: linear-gradient(to right, rgb(255, 200, 0), cyan);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+.p2abouttext{
+    color: white;
+    max-width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1537px) {
+    .page2{
+        margin-top: 400px;
+    }
+}
+@media (max-width: 1280px) {
+    .page2{
+        margin-top: 200px;
+    }
+}
+@media (max-width: 1024px) {
+    .page2{
+        margin-top: 150px;
+    }
+}
+@media (max-width: 768px) {
+    .page2{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 475px) {
+    .page2{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 314px) {
+    .page2{
+        margin-top: 0px;
+    }
+}

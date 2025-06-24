@@ -253,7 +253,7 @@
 .element{
   scale: 1.75;
   top: 100px;
-  transform: translateX(-10000%);
+  transform: translateX(-70%) translateY(80%);
   position: relative;
   margin-left: auto;
   width: 300px;

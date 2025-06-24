@@ -159,8 +159,7 @@
         1px 1px 20px rgba(0, 0, 0, 1);
 }
 .p2button1:hover{
-    scale: 1.075;
-    color: orangered;
+    scale: 0.95;
     border: 1px solid rgb(195, 195, 195);
     animation: ColorTravel 2.5s linear infinite;
 }

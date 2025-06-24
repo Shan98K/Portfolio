@@ -15,7 +15,7 @@ html{
         rotate: 360deg;
     }
 }
-.page {
+.page1{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
